@@ -93,7 +93,7 @@ body {
 /**-------------------------------HERO----------------------------*/
 
 .hero {
-
+    background: #2E2F42;
 }
 
 .hero-title {
@@ -102,7 +102,7 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    background: #2E2F42;
+    
     color: #FFFFFF;
 }
 
@@ -121,5 +121,32 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    background: #404BBF;
+    color: #404BBF;
+}
+
+/**-------------------------------STRATEGY----------------------------*/
+
+
+.strategy {
+
+}
+
+.strategy-title {
+
+}
+
+.strategy-list {
+
+}
+
+.strategy-list-item {
+
+}
+
+.strategy-list-subtitle {
+
+}
+
+.strategy-list-text {
+    
 }
