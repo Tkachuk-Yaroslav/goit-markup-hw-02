@@ -1,6 +1,8 @@
 :root {
     --main-btn-bg: #4D5AE5;
     --secondary-btn-bg: #F4F4FD;
+    --btn-bg-in-hover: #404BBF;
+    --address-hover: #404BBF;
     --main-btn-color: #FFFFFF;
     --secondary-btn-color: #4D5AE5;
     --address-color: #434455;
@@ -10,11 +12,12 @@
     --first-logo-part: #4D5AE5;
     --second-header-logo-part: #2E2F42;
     --second-footer-logo-part: #F4F4FD;
-    --footer-text: color: #E7E9FC;
+    --footer-text-color: #E7E9FC;
     --main-page-bg: #2E2F42;
     --secondary-page-bg: #F4F4FD;
-    --main-portfolio-color: #2E2F42 
+    --main-portfolio-color: #2E2F42;
     --secondary-portfolio-color: #434455;
+    --team-list-bg: #ffffff;
 }
 /*КОЛЬОРОВІ ЗМІННІ
 --main-btn-bg: #4D5AE5; головна заливка кнопки
@@ -69,11 +72,13 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--first-logo-part);
+    /*color: #4D5AE5;*/
 }
 
 .part-of-logo {
-    color: #2E2F42;
+    color: var(--second-header-logo-part);
+    /*color: #2E2F42;*/
 }
 
 .header-list {
@@ -81,21 +86,25 @@ body {
 }
 
 .header-list-item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+    
+
+    /*color: #2E2F42;*/
 }
 
 
 .header-list-link {
-    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-page-text);
+    /*color: #2E2F42;*/
 }
 
 .header-list-link:hover,
 .header-list-link:focus {
-    color: #404BBF;
+    color: var(--btn-bg-in-hover);
+    /*color: #404BBF;*/
 }
 .header-address {
     font-style: normal;
@@ -114,18 +123,21 @@ body {
     font-size: 16px;
     line-height: 1.5;    
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--address-color);
+    /*color: #434455;*/
 }
 
 .address-list-link:hover,
 .address-list-link:focus {
-    color: #404BBF;
+    color: var(--address-hover);
+    /*color: #404BBF;*/
 }
 
 /**-------------------------------HERO----------------------------*/
 
 .hero {
-    background: #2E2F42;
+    background-color: var(--main-page-bg);
+    /*background-color: #2E2F42;*/
 }
 
 .hero-title {
@@ -146,13 +158,16 @@ body {
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #4D5AE5;
+    color: var(--main-btn-color);
+    /*color: #FFFFFF;*/
+    background: var(--main-btn-bg);
+    /*background: #4D5AE5;*/
     cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    color: #404BBF;
+    color: var(--btn-bg-in-hover);
+    /*color: #404BBF;*/
 }
 
 /**-------------------------------STRATEGY----------------------------*/
@@ -179,14 +194,16 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--secondary-page-text);
+    /*color: #2E2F42;*/
 }
 
 .strategy-list-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-page-text);
+    /*color: #434455;*/
 }
 
 /**-------------------------------WORK----------------------------*/
@@ -200,7 +217,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--secondary-page-text);
+    /*color: #2E2F42;*/
 }
 
 .work-list {
@@ -213,7 +231,8 @@ body {
 
 /**-------------------------------OUR TEAM----------------------------*/
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--secondary-page-bg);
+    /*background-color: #F4F4FD;*/
 }
 
 .team-title {
@@ -222,7 +241,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--secondary-page-text);
+    /*color: #2E2F42;*/
 }
 
 .team-list {
@@ -230,7 +250,8 @@ body {
 }
 
 .team-list-item {
-    background-color: #FFFFFF;
+    background-color: var(--team-list-bg);
+    /*background-color: #FFFFFF;*/
 }
 
 .team-list-subtitle {
@@ -239,7 +260,8 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--secondary-page-text);
+    /*color: #2E2F42;*/
 }
 
 .team-list-text {
@@ -247,13 +269,15 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-page-text);
+    /*color: #434455;*/
 }
 
 /**-------------------------------FOOTER----------------------------*/
 
 .footer {
-    background: #2E2F42;
+    background-color: var(--main-page-bg);
+    /*background-color: #2E2F42;*/
 }
 
 .footer-logo {
@@ -261,22 +285,23 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
+    color: var(--first-logo-part);
+    /*color: #4D5AE5;*/
 }
 
 .footer-part-of-logo {
-    color: #F4F4FD;
+    color: var(--second-footer-logo-part);
+    /*color: #F4F4FD;*/
 }
 
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--footer-text-color);
+    /*color: #E7E9FC;*/
 }
 
 /**-------------------------------portfolio----------------------------*/
@@ -312,17 +337,21 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    background-color: #F4F4FD;
+    background-color: var(--secondary-btn-bg);
+    /*background-color: #F4F4FD;*/
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    color: #4D5AE5;
+    color: var(--secondary-btn-color);
+    /*color: #4D5AE5;*/
     cursor: pointer;
 }
 
 .filter-list-btn:hover,
 .filter-list-btn:focus {
-    background: #404BBF;
-    color: #FFFFFF;
+    background-color: var(--btn-bg-in-hover);
+    /*background-color: #404BBF;*/
+    color: var(--main-btn-color);
+    /*color: #FFFFFF;*/
 }
 .result-list {
 
@@ -341,12 +370,14 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--main-portfolio-color);
+    /*color: #2E2F42;*/
 }
 
 .result-list-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-portfolio-color);
+    /*color: #434455;*/
 }
