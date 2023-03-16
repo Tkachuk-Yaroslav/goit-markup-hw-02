@@ -1,8 +1,38 @@
+:root {
+    --main-btn-bg: #4D5AE5;
+    --secondary-btn-bg: #F4F4FD;
+    --main-btn-color: #FFFFFF;
+    --secondary-btn-color: #4D5AE5;
+    --address-color: #434455;
+    --main-title-color: #FFFFFF;
+    --main-page-text: #434455;
+    --secondary-page-text: #2E2F42;
+    --first-logo-part: #4D5AE5;
+    --second-header-logo-part: #2E2F42;
+    --second-footer-logo-part: #F4F4FD;
+    --footer-text: color: #E7E9FC;
+    --main-page-bg: #2E2F42;
+    --secondary-page-bg: #F4F4FD;
+    --main-portfolio-color: #2E2F42 
+    --secondary-portfolio-color: #434455;
+}
 /*КОЛЬОРОВІ ЗМІННІ
---main-btn-bg: #4D5AE5;
---secondary-btn-bg: #F4F4FD;
-
-
+--main-btn-bg: #4D5AE5; головна заливка кнопки
+--secondary-btn-bg: #F4F4FD; другорядна заливка кнопки
+--main-btn-color: #FFFFFF; головний колір кнопки
+--secondary-btn-color: #4D5AE5;другорядний колір кнопки
+--address-color: #434455; колір в тезі адрес
+--main-title-color: #FFFFFF; колір заголовку H1
+--main-page-text: #434455; головний текст сторінки - абзац
+--secondary-page-text: #2E2F42; другорядний текст сторінки заголовки
+--first-logo-part: #4D5AE5; перша частина лого
+--second-header-logo-part: #2E2F42; друга частина в хедері
+--second-footer-logo-part: #F4F4FD; в футері
+--footer-text: color: #E7E9FC; текст в фтері - абзац
+--main-page-bg: #2E2F42; головний бекграунд сторінки
+--secondary-page-bg: #F4F4FD; другорядний бекграунд сторінки
+--main-portfolio-color: #2E2F42 головний колір портфоліо
+--secondary-portfolio-color: #434455; другий колір портфоліо
 
 */
 
@@ -111,8 +141,8 @@ body {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
+    letter-spacing: 0.02em;    
+    color: var(--main-title-color);
 }
 
 .hero-btn {
