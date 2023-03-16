@@ -44,6 +44,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
+    background-color: #ffffff;
 }
 
 .link {
@@ -163,7 +164,7 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    color: var(--btn-bg-in-hover);
+    background-color: var(--btn-bg-in-hover);
     /*color: #404BBF;*/
 }
 
